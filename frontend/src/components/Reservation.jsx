@@ -16,15 +16,17 @@ const Reservation = () => {
 
   const handleReservation = async (e) => {
     e.preventDefault();
+    console.log(firstName,lastName,email,phone,date,time);
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/reservation/send",
+        "http://localhost:3000/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
+            "Access-Control-Allow-Origin": "*",
             "Content-Type": "application/json",
           },
-          withCredentials: true,
+          withCredentials: false,
         }
       );
       toast.success(data.message);

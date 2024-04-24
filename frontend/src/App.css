@@ -32,7 +32,7 @@ nav::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(201, 201, 201);
+  background: rgb(162, 92, 212);
 }
 nav .logo {
   flex: 1;
@@ -73,7 +73,7 @@ nav .menuBtn {
   font-size: 16px;
 }
 nav .menuBtn:hover {
-  color: #fff;
+  color: #1e1050;
   background: #222;
   transition: 0.3s;
   cursor: pointer;
